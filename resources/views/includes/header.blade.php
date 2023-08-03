@@ -3,14 +3,14 @@
     <div>
 
         <figure>
-            <img src="{{@Vite::asset('resources/img/dc-logo.png')}}" alt="">
+            <img src="{{ @Vite::asset('resources/img/dc-logo.png') }}" alt="">
         </figure>
         <ul>
-            @foreach($voices as $voice)
-            <li>
+            @foreach ($voices as $voice)
+                <li>
 
-                <a href="">{{$voice['text']}}</a>
-            </li>
+                    <a href="">{{ $voice['text'] }}</a>
+                </li>
             @endforeach
         </ul>
     </div>
