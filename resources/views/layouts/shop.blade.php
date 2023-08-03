@@ -19,9 +19,12 @@
     <?php $comics = config('comics'); ?>
     <?php $voices = config('voices'); ?>
     <?php $buys = config('buys'); ?>
+    <?php $socials = config('socials'); ?>
 
     @include('includes.header')
     @include('includes.jumbotron')
+    @include('includes.main')
+    @include('includes.footer')
 
 </body>
 
