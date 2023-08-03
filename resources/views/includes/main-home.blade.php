@@ -7,10 +7,7 @@
 
 @section('main')
     <section>
-        <div class="jumbo-section">
-            <img src="{{ @Vite::asset('resources/img/jumbotron.jpg') }}" alt="">
-            <h2>Current Series</h2>
-        </div>
+        @include('includes/jumbotron')
         <div class="card-section">
             <div class="container-card">
                 @foreach ($comics as $comic)
