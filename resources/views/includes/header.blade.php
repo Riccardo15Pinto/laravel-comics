@@ -9,7 +9,7 @@
             @foreach ($voices as $voice)
                 <li>
 
-                    <a href="">{{ $voice['text'] }}</a>
+                    <a href="{{ route($voice['route']) }}">{{ $voice['text'] }}</a>
                 </li>
             @endforeach
         </ul>
