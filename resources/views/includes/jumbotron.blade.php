@@ -4,7 +4,17 @@
     </div>
     <div class="bottom-jumbo">
         <div class="container-card">
-            <ComicCard v-for=" comic in comics" :comic="comic" :key="comic.series" />
+            @foreach($comics as $comic)
+
+            <div class="card">
+                <figure>
+                    <img src="{{ $comic['thumb']}}" alt="">
+                </figure>
+
+                <h3>{{ $comic['series']}}</h3>
+            </div>
+            @endforeach
+
         </div>
         <a href="#" class="button">LOAD MORE</a>
     </div>
@@ -13,12 +23,16 @@
 
     <div>
         <ul>
-            <li v-for="image in images" :key="image.name">
+            @foreach($buys as $buy)
+
+            <li>
                 <figure>
-                    <img :src="getImagePath(image.pic)" alt="">
+                    <img src="{{@Vite::asset($buy['pic'])}}" alt="">
                 </figure>
-                <span>{{ image.name }}</span>
+                <span>{{ $buy['name'] }}</span>
             </li>
+            @endforeach
+
         </ul>
     </div>
 </section>
