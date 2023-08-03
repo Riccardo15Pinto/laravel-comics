@@ -18,20 +18,20 @@
         </div>
         <a href="#" class="button">LOAD MORE</a>
     </div>
-</section>
-<section class="info-merch">
+    <div class="info-merch">
 
-    <div>
-        <ul>
-            @foreach ($buys as $buy)
-                <li>
-                    <figure>
-                        <img src="{{ @Vite::asset("resources/img/{$buy['pic']}") }}" alt="">
-                    </figure>
-                    <span>{{ $buy['name'] }}</span>
-                </li>
-            @endforeach
+        <div>
+            <ul>
+                @foreach ($buys as $buy)
+                    <li>
+                        <figure>
+                            <img src="{{ @Vite::asset("resources/img/{$buy['pic']}") }}" alt="">
+                        </figure>
+                        <span>{{ $buy['name'] }}</span>
+                    </li>
+                @endforeach
 
-        </ul>
+            </ul>
+        </div>
     </div>
 </section>
