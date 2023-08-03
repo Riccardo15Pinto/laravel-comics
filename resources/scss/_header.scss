@@ -1,0 +1,32 @@
+header {
+
+    div {
+        display: flex;
+        justify-content: space-between;
+        width: 1300px;
+        margin: 0 auto;
+        padding: 20px 0;
+
+        ul {
+            display: flex;
+            align-items: center;
+
+            li {
+                margin-left: 20px;
+
+                a {
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    color: black;
+                    padding: 62px 0;
+
+                    &:hover,
+                    &:focus {
+                        color: #0C7CEC;
+                        border-bottom: 5px solid currentColor;
+                    }
+                }
+            }
+        }
+    }
+}
