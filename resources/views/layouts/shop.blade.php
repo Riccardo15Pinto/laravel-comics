@@ -18,8 +18,10 @@
 <body>
     <?php $comics = config('comics'); ?>
     <?php $voices = config('voices'); ?>
+    <?php $buys = config('buys'); ?>
 
     @include('includes.header')
+    @include('includes.jumbotron')
 
 </body>
 
