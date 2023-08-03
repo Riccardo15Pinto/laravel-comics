@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Laravel</title>
+    <title>@yield('title')</title>
 
     <!-- Fonts -->
     <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -16,14 +16,12 @@
 </head>
 
 <body>
-    <?php $comics = config('comics'); ?>
-    <?php $voices = config('voices'); ?>
-    <?php $buys = config('buys'); ?>
-    <?php $socials = config('socials'); ?>
+
 
     @include('includes.header')
-    @include('includes.jumbotron')
-    @include('includes.main')
+    <main>
+        @yield('main')
+    </main>
     @include('includes.footer')
 
 </body>

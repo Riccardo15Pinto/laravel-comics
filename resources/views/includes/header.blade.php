@@ -1,3 +1,5 @@
+<?php $voices = config('voices'); ?>
+
 <header>
 
     <div>
