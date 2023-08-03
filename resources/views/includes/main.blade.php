@@ -1,5 +1,4 @@
-<main>
-
+<section>
     <nav>
         <div class="column">
             <div>
@@ -50,4 +49,4 @@
             </ul>
         </div>
     </nav>
-</main>
+</section>
