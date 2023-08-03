@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('layouts/home');
+    return view('includes/main-home');
 })->name('home');
 
 Route::get('/character', function () {
