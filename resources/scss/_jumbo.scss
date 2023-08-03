@@ -32,6 +32,21 @@
             .card {
                 flex-basis: calc(100% / 6);
                 text-align: left;
+                padding: 20px;
+
+                figure {
+                    background-color: black;
+                }
+            
+            
+                img {
+                    height: 300px;
+            
+                    &:hover {
+                        opacity: 0.3;
+                    }
+            
+                }
             }
         }
 
