@@ -1,95 +1,18 @@
 .jumbo-section {
-    .top-jumbo {
-        background-image: url('../assets/img/jumbotron.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 400px;
-
-        h2 {
-            background-color: #0282F9;
-            padding: 10px 20px;
-            display: inline-block;
-            text-transform: uppercase;
-            color: white;
-            position: relative;
-            top: -6%;
-            left: 16%;
-        }
-    }
-
-    .bottom-jumbo {
-        background-color: #1C1C1C;
-        padding: 40px 0;
-        color: white;
-        text-align: center;
-
-        .container-card {
-            margin: 0 auto;
-            width: 1300px;
-            display: flex;
-            flex-wrap: wrap;
-
-            .card {
-                flex-basis: calc(100% / 6);
-                text-align: left;
-                padding: 20px;
-
-                figure {
-                    background-color: black;
-                }
-            
-            
-                img {
-                    height: 300px;
-            
-                    &:hover {
-                        opacity: 0.3;
-                    }
-            
-                }
-            }
-        }
-
-        .button {
-            padding: 10px 50px;
-            background-color: #0282F9;
-            color: white;
-            display: inline-block;
-            margin: 20px;
-            text-transform: uppercase;
-        }
-    }
-    .info-merch {
+    background-image: url('../assets/img/jumbotron.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    
+    h2 {
         background-color: #0282F9;
-    
-        div {
-            padding: 40px 0;
-            width: 1300px;
-            margin: 0 auto;
-            color: white;
-    
-            ul {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                padding: 0 20px;
-    
-                li {
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-    
-                    figure {
-                        width: 50px;
-    
-    
-                    }
-    
-                    span {
-                        margin-left: 10px;
-                    }
-                }
-            }
-        }
+        padding: 10px 20px;
+        display: inline-block;
+        text-transform: uppercase;
+        color: white;
+        position: relative;
+        top: -6%;
+        left: 16%;
     }
+   
 }
