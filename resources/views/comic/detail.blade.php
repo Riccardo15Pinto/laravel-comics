@@ -13,7 +13,10 @@
 
 @section('main')
     <section class="details">
-
+        <div>
+            <a href="{{ route('comic.detail', $prev) }}">Prev</a>
+            <a href="{{ route('comic.detail', $next) }}">Next</a>
+        </div>
         <div class="detail-container">
 
             <div class="col">
