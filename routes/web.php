@@ -32,7 +32,12 @@ Route::prefix('/comics')->name('comic.')->group(function () {
         $products = config('comics');
         $product = $products[$index];
 
-        return view('comic.detail', compact('product'));
+        $prev = $index > 0 ? $index - 1 : count($products) - 1;
+        $next = $index == count($products) - 1 ? 0 : $index + 1;
+
+        $data = compact('product', 'next', 'prev');
+
+        return view('comic.detail', $data);
     })->name('detail');
 });
 
