@@ -14,41 +14,41 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('includes/main-home');
+    return view('home');
 })->name('home');
 
 Route::get('/character', function () {
-    return view('layouts/character');
+    return view('character');
 })->name('character');
 
 Route::get('/comics', function () {
-    return view('layouts/comics');
+    return view('comics');
 })->name('comics');
 
 Route::get('/movies', function () {
-    return view('layouts/movies');
+    return view('movies');
 })->name('movies');
 
 Route::get('/tv', function () {
-    return view('layouts/tv');
+    return view('tv');
 })->name('tv');
 
 Route::get('/collectibles', function () {
-    return view('layouts/collectibles');
+    return view('collectibles');
 })->name('collectibles');
 
 Route::get('/videos', function () {
-    return view('layouts/videos');
+    return view('videos');
 })->name('videos');
 
 Route::get('/fans', function () {
-    return view('layouts/fans');
+    return view('fans');
 })->name('fans');
 
 Route::get('/news', function () {
-    return view('layouts/news');
+    return view('news');
 })->name('news');
 
 Route::get('/shop', function () {
-    return view('layouts/shop');
+    return view('shop');
 })->name('shop');
