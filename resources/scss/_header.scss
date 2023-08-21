@@ -18,12 +18,12 @@ header {
                     font-weight: 600;
                     text-transform: uppercase;
                     color: black;
-                    padding: 62px 0;
+                    padding: 60px 0;
 
                     &:hover,
                     &.active {
                         color: #0C7CEC;
-                        border-bottom: 5px solid currentColor;
+                        border-bottom: 3px solid currentColor;
                     }
                 }
             }
