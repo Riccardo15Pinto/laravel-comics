@@ -8,7 +8,7 @@ return [
     ],
     [
         'text' => 'Comics',
-        'route' => 'comics',
+        'route' => 'comic.list',
     ],
     [
         'text' => 'Movies',
