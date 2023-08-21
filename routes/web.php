@@ -21,9 +21,20 @@ Route::get('/character', function () {
     return view('character');
 })->name('character');
 
-Route::get('/comics', function () {
-    return view('comics');
-})->name('comics');
+Route::prefix('/comics')->name('comic.')->group(function () {
+
+    Route::get('/', function () {
+        return view('comic.list');
+    })->name('list');
+
+    Route::get('/comic/{index}', function ($index) {
+
+        $products = config('comics');
+        $product = $products[$index];
+
+        return view('comic.detail', compact('product'));
+    })->name('detail');
+});
 
 Route::get('/movies', function () {
     return view('movies');
