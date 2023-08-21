@@ -21,7 +21,7 @@ header {
                     padding: 62px 0;
 
                     &:hover,
-                    &:focus {
+                    &.active {
                         color: #0C7CEC;
                         border-bottom: 5px solid currentColor;
                     }
