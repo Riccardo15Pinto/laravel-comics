@@ -6,7 +6,7 @@
 @section('title', 'HOME')
 
 @section('main')
-    <section>
+    <section id="home-main">
         @include('includes/jumbotron')
         <div class="card-section">
             <div class="container-card">
