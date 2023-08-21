@@ -25,6 +25,8 @@
 
     @include('includes.header')
 
+    @include('includes/jumbotron')
+
     <main>
 
         @yield('main')

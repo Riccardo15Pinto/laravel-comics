@@ -6,8 +6,7 @@
 @section('title', 'HOME')
 
 @section('main')
-    <section id="home-main">
-        @include('includes/jumbotron')
+    <section class="home-main">
         <div class="card-section">
             <div class="container-card">
                 @foreach ($comics as $comic)
