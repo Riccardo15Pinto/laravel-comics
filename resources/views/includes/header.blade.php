@@ -3,10 +3,11 @@
 <header>
 
     <div>
-
-        <figure>
-            <img src="{{ @Vite::asset('resources/img/dc-logo.png') }}" alt="">
-        </figure>
+        <a href="{{ route('home') }}">
+            <figure>
+                <img src="{{ @Vite::asset('resources/img/dc-logo.png') }}" alt="">
+            </figure>
+        </a>
         <ul>
             @foreach ($voices as $voice)
                 <li>
