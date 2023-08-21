@@ -5,6 +5,13 @@
 
 @section('title', 'HOME')
 
+@section('item')
+    <div class="flag">
+        <h3>CURRENT SERIES</h3>
+    </div>
+@endsection
+
+
 @section('main')
     <section class="home-main">
         <div class="card-section">
